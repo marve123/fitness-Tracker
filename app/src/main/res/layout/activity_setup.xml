@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dark"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Gym Banner -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/gym_banner"
+            android:scaleType="centerCrop"
+            android:contentDescription="Gym banner"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="FitTracker"
+            android:textColor="@color/accent_orange"
+            android:textSize="36sp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Create your profile to get started"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"/>
+
+        <!-- Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Your Name"
+            android:layout_marginBottom="16dp"
+            app:boxStrokeColor="@color/accent_orange"
+            app:hintTextColor="@color/accent_orange"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName|textCapWords"
+                android:textColor="@color/text_primary"
+                android:maxLength="40"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Weight -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weight (kg)"
+            android:layout_marginBottom="32dp"
+            app:boxStrokeColor="@color/accent_orange"
+            app:hintTextColor="@color/accent_orange"
+            app:suffixText="kg"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_weight"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:textColor="@color/text_primary"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Save Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_save_profile"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="LET'S GO 🚀"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            app:backgroundTint="@color/accent_orange"
+            app:cornerRadius="12dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="&quot;The only bad workout is the one that didn't happen.&quot;"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:layout_marginTop="24dp"/>
+
+    </LinearLayout>
+</ScrollView>

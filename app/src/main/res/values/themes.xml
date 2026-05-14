@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.FitnessTracker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_orange</item>
+        <item name="colorPrimaryVariant">@color/accent_orange_dark</item>
+        <item name="colorOnPrimary">@color/text_primary</item>
+        <item name="colorSecondary">@color/accent_blue</item>
+        <item name="colorOnSecondary">@color/text_primary</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:statusBarColor">@color/bg_dark</item>
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="materialAlertDialogTheme">@style/AlertDialogDark</item>
+    </style>
+
+    <style name="AlertDialogDark" parent="ThemeOverlay.MaterialComponents.MaterialAlertDialog">
+        <item name="colorSurface">@color/surface_dark</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="buttonBarPositiveButtonStyle">@style/OrangeTextButton</item>
+    </style>
+
+    <style name="OrangeTextButton" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@color/accent_orange</item>
+    </style>
+</resources>
